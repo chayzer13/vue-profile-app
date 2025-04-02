@@ -1,6 +1,10 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import linkedinIcon from './assets/linkedin.svg'
+import facebookIcon from './assets/facebook.svg'
+import twitterIcon from './assets/twitter.svg'
+import instagramIcon from './assets/instagram.svg'
 </script>
 
 <template>
@@ -25,16 +29,16 @@ import TheWelcome from './components/TheWelcome.vue'
     <footer>
       <div class="social-links">
         <a href="#" class="social-link">
-          <img src="@/assets/facebook.svg" alt="Facebook" />
+          <img :src="facebookIcon" alt="Facebook" />
         </a>
         <a href="#" class="social-link">
-          <img src="@/assets/twitter.svg" alt="Twitter" />
+          <img :src="twitterIcon" alt="Twitter" />
         </a>
         <a href="#" class="social-link">
-          <img src="@/assets/instagram.svg" alt="Instagram" />
+          <img :src="instagramIcon" alt="Instagram" />
         </a>
         <a href="#" class="social-link">
-          <img src="@/assets/linkedin.svg" alt="LinkedIn" />
+          <img :src="linkedinIcon" alt="LinkedIn" />
         </a>
       </div>
       <p>© 2024 Your Company. All rights reserved.</p>
