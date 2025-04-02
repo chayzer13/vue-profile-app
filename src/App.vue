@@ -33,6 +33,9 @@ import TheWelcome from './components/TheWelcome.vue'
         <a href="#" class="social-link">
           <img src="@/assets/instagram.svg" alt="Instagram" />
         </a>
+        <a href="#" class="social-link">
+          <img src="@/assets/linkedin.svg" alt="LinkedIn" />
+        </a>
       </div>
       <p>© 2024 Your Company. All rights reserved.</p>
     </footer>
