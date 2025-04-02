@@ -4,31 +4,39 @@ import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/users">Users</router-link>
-      <router-link to="/profile">Profile</router-link>
-    </nav>
-  </header>
+  <div class="app">
+    <header>
+      <nav>
+        <router-link to="/">Home</router-link>
+        <router-link to="/users">Users</router-link>
+        <router-link to="/login">Login</router-link>
+        <router-link to="/profile">Profile</router-link>
+      </nav>
+    </header>
 
-  <main>
-    <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
-  </main>
+    <main>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </main>
 
-  <footer>
-    <div class="social-links">
-      <a href="#" class="social-link"><img src="@/assets/facebook.svg" alt="Facebook"></a>
-      <a href="#" class="social-link"><img src="@/assets/instagram.svg" alt="Instagram"></a>
-      <a href="#" class="social-link"><img src="@/assets/twitter.svg" alt="Twitter"></a>
-      <a href="#" class="social-link"><img src="@/assets/linkedin.svg" alt="LinkedIn"></a>
-    </div>
-    <p>Copyright ©2020 All rights reserved</p>
-  </footer>
+    <footer>
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <img src="@/assets/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="#" class="social-link">
+          <img src="@/assets/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="#" class="social-link">
+          <img src="@/assets/instagram.svg" alt="Instagram" />
+        </a>
+      </div>
+      <p>© 2024 Your Company. All rights reserved.</p>
+    </footer>
+  </div>
 </template>
 
 <style>
